@@ -1,6 +1,7 @@
 class Pontuacao {
  constructor(){
    this.pontos = 0;
+   this.pontosToLife = 3000;
  }
   
  exibe(){
@@ -16,6 +17,11 @@ class Pontuacao {
   
  addPts(pontos){
    this.pontos+=parseInt(pontos);
+   this.pontosToLife-=parseInt(pontos);
+   if (this.pontosToLife <= 0){
+     Vida.ganhaVida(1);
+     this.pontosToLife = 3000;
+   }
  }
   
  restart(){

@@ -6,6 +6,7 @@ html, body {
 
 body {
   margin: 0;
+  background-color: #000;
   display: flex;
 
   /* This centers our sketch horizontally. */
