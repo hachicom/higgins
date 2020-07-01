@@ -50,7 +50,9 @@ class Jogo {
   
   touchStarted() {
     if (!this.gameover) {
-      personagem.pula();
+      if (mouseX < width/2){
+        personagem.pula();
+      }
     }else{
       if (personagem.y > personagem.yInicial)
         this.restart();
