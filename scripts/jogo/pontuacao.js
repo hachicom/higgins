@@ -19,7 +19,7 @@ class Pontuacao {
    this.pontos+=parseInt(pontos);
    this.pontosToLife-=parseInt(pontos);
    if (this.pontosToLife <= 0){
-     Vida.ganhaVida(1);
+     vida.ganhaVida(1);
      this.pontosToLife = 3000;
    }
  }
