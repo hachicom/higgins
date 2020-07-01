@@ -28,9 +28,9 @@ class Jogo {
 
   keyPressed(key) {
     if (!this.gameover) {
-      //if (key === 'ArrowUp') {
+      if (key !== 'ArrowDown') {
         personagem.pula();
-      //}
+      }
     }else{
       if (personagem.y > personagem.yInicial)
         this.restart();
@@ -39,7 +39,9 @@ class Jogo {
 
   mousePressed() {
     if (!this.gameover) {
-      personagem.pula();
+      if (mouseX < width/2){
+        personagem.pula();
+      }
     }else{
       if (personagem.y > personagem.yInicial)
         this.restart();
@@ -52,6 +54,7 @@ class Jogo {
     }else{
       if (personagem.y > personagem.yInicial)
         this.restart();
+        //cenaAtual='telaInicial';
     }
     return false;
   }
@@ -112,6 +115,12 @@ class Jogo {
     
     //Movimentação e lógica
     personagem.aplicaGravidade();
+
+    if (keyIsDown(DOWN_ARROW) || (mouseIsPressed && mouseX >= width/2)){
+      personagem.rasteja();
+    }else{
+      personagem.levanta();
+    }
 
     if (!this.gameover) {
       cenario.move(this.loop);

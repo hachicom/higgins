@@ -1,29 +1,26 @@
 class TelaInicial {
-  constructor(){    
-    botaoGerenciador.botao.hide();   
-    botaoRestart.botao.hide();
+  constructor(){
   }
   
   keyPressed(key) {
-    cenaAtual='jogo';
-    jogo.restart();
+    cenaAtual='telaTutorial';
+    //jogo.restart();
   }
 
   mousePressed() {
-    cenaAtual='jogo';
-    jogo.restart();
+    cenaAtual='telaTutorial';
+    //jogo.restart();
   }
   
   touchStarted() {
-    cenaAtual='jogo';
-    jogo.restart();
+    cenaAtual='telaTutorial';
+    //jogo.restart();
     return false;
   }
   
   draw(){
     this._imagemDeFundo();
     this._texto();
-    //this._botao();
   }
   
   _imagemDeFundo(){
@@ -41,10 +38,6 @@ class TelaInicial {
  textSize(30);
     text("Recriando a fase da Floresta do Hugo",width/2,height - 200);
     textSize(40);
-    text('Press any key\nClick/Touch to Play',width/2,height - 80);
-  }
-  
-  _botao(){
-    botaoGerenciador.draw();    
+    text('Press key/Click/Touch to Play',width/2,height - 40);
   }
 }

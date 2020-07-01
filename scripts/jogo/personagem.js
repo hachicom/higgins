@@ -14,6 +14,8 @@ class Personagem extends Animacao{
     this.piscafactor = 2;
     this.dead = false;
     this.inAir = false;
+    this.crouching = false;
+    this.maskYinit = this.mascara[1];
   }
   
  exibe(){
@@ -39,6 +41,29 @@ class Personagem extends Animacao{
      }
      this.qtdPulos++;
      this.inAir = true;
+     if (this.crouching){
+      this.crouching = false;
+      this.mascara[1] = this.maskYinit;
+     }
+   }
+ }
+
+ rasteja(){
+   if(this.inAir || this.dead){
+     return false;
+   }
+   if (!this.crouching){
+    this.trocaAnimacao(matrizPersonagemRastejando);
+    this.crouching = true;
+    this.mascara[1]+=40;
+   }
+ }
+
+ levanta(){
+  if (this.crouching){
+    this.trocaAnimacao(matrizPersonagem);
+    this.crouching = false;
+    this.mascara[1] = this.maskYinit;
    }
  }
   

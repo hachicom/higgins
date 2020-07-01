@@ -6,6 +6,7 @@ let imagemCenario5;
 let imagemCenario6;
 let imagemPersonagem;
 let imagemVida;
+let imagemItemGold;
 let imagemInimigo;
 let imagemInimigoGrande;
 let imagemInimigoVoador;
@@ -66,6 +67,9 @@ const matrizPersonagem = [
 const matrizPersonagemPulando = [[0, 640]];
 const matrizPersonagemCaindo = [[240, 640]];
 const matrizPersonagemMorrendo = [[480, 640]];
+const matrizPersonagemRastejando = [
+  [720, 640],[720, 640],[720, 640],[0, 960],[0, 960],[0, 960],[240, 960],[240, 960],[240, 960],[480, 960],[480, 960],[480, 960]
+];
 
 const matrizFramesInimigos = [[
   [0, 0], [186, 0], [372, 0], [558, 0], [0, 120], [186, 120], [372, 120], [0, 0], [186, 0], [372, 0], [558, 0], [0, 120], [186, 120], [372, 120], [558, 120], [0, 240], [186, 240], [372, 240], [558, 240]
