@@ -1,0 +1,147 @@
+{
+  "configuracoes":{
+    "levels": 4,
+    "vidaMaxima": 5,
+    "vidaInicial": 5  
+  },
+  "level1": [
+    {
+      "inimigo": [0],
+      "velocidade": [8],
+      "delay": [0]
+    },{
+      "inimigo": [3],
+      "velocidade": [8],
+      "delay": [0]
+    },{
+      "inimigo": [0,3],
+      "velocidade": [8,8],
+      "delay": [0,400]
+    },{
+      "inimigo": [3,0,1],
+      "velocidade": [8,8,16],
+      "delay": [0,400,400]
+    },{
+      "inimigo": [0,2],
+      "velocidade": [8,8],
+      "delay": [0,400]
+    },{
+      "inimigo": [2,3],
+      "velocidade": [8,8],
+      "delay": [100,400]
+    },{
+      "inimigo": [0,2,1],
+      "velocidade": [8,8,20],
+      "delay": [0,400,800]
+    },{
+      "inimigo": [3,1,1,1],
+      "velocidade": [8,10,12,14],
+      "delay": [0,200,400,600]
+    }
+  ],
+  "level2": [
+    {
+      "inimigo": [0,3],
+      "velocidade": [8,8],
+      "delay": [0,0]
+    },{
+      "inimigo": [3,1],
+      "velocidade": [8,30],
+      "delay": [0,400]
+    },{
+      "inimigo": [0,3,1],
+      "velocidade": [8,8,15],
+      "delay": [0,400,500]
+    },{
+      "inimigo": [3,0,1],
+      "velocidade": [8,8,16],
+      "delay": [0,400,400]
+    },{
+      "inimigo": [0,2],
+      "velocidade": [8,8],
+      "delay": [0,400]
+    },{
+      "inimigo": [2,3],
+      "velocidade": [8,8],
+      "delay": [100,400]
+    },{
+      "inimigo": [0,2,1],
+      "velocidade": [8,8,20],
+      "delay": [0,400,800]
+    },{
+      "inimigo": [3,1,2,3],
+      "velocidade": [8,10,8,8],
+      "delay": [0,200,300,400]
+    }
+  ],
+  "level3": [
+    {
+      "inimigo": [1,3],
+      "velocidade": [8,8],
+      "delay": [0,0]
+    },{
+      "inimigo": [3,1],
+      "velocidade": [8,30],
+      "delay": [0,400]
+    },{
+      "inimigo": [0,3,1],
+      "velocidade": [8,8,15],
+      "delay": [0,400,500]
+    },{
+      "inimigo": [3,0,1],
+      "velocidade": [8,8,16],
+      "delay": [0,400,400]
+    },{
+      "inimigo": [0,2],
+      "velocidade": [8,8],
+      "delay": [0,400]
+    },{
+      "inimigo": [2,3],
+      "velocidade": [8,8],
+      "delay": [100,400]
+    },{
+      "inimigo": [0,2,1],
+      "velocidade": [8,8,20],
+      "delay": [0,400,800]
+    },{
+      "inimigo": [3,1,2,3],
+      "velocidade": [8,10,8,8],
+      "delay": [0,200,300,400]
+    }
+  ],
+  "level4": [
+    {
+      "inimigo": [2,3],
+      "velocidade": [8,8],
+      "delay": [0,0]
+    },{
+      "inimigo": [3,1],
+      "velocidade": [8,30],
+      "delay": [0,400]
+    },{
+      "inimigo": [0,3,1],
+      "velocidade": [8,8,15],
+      "delay": [0,400,500]
+    },{
+      "inimigo": [3,0,1],
+      "velocidade": [8,8,16],
+      "delay": [0,400,400]
+    },{
+      "inimigo": [0,2],
+      "velocidade": [8,8],
+      "delay": [0,400]
+    },{
+      "inimigo": [2,3],
+      "velocidade": [8,8],
+      "delay": [100,400]
+    },{
+      "inimigo": [0,2,1],
+      "velocidade": [8,8,20],
+      "delay": [0,400,800]
+    },{
+      "inimigo": [3,1,2,3],
+      "velocidade": [8,10,8,8],
+      "delay": [0,200,300,400]
+    }
+  ]
+}
