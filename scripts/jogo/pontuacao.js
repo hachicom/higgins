@@ -26,5 +26,6 @@ class Pontuacao {
   
  restart(){
    this.pontos=0;
+   this.pontosToLife = 3000;
  }
 }

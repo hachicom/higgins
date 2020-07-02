@@ -31,7 +31,7 @@
       "delay": [100,400]
     },{
       "inimigo": [0,2,1],
-      "velocidade": [8,8,20],
+      "velocidade": [8,8,18],
       "delay": [0,400,800]
     },{
       "inimigo": [3,1,1,1],
@@ -50,7 +50,7 @@
       "delay": [0,400]
     },{
       "inimigo": [0,3,1],
-      "velocidade": [8,8,15],
+      "velocidade": [8,8,13],
       "delay": [0,400,500]
     },{
       "inimigo": [3,3,1],
